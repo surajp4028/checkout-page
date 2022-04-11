@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background-color: #080808;
+    /* max-width: 1200px; */
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* navigation----------------------------------- */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+ .left-side {
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    color: white;
+}
+.navigation .left-side h4{
+    padding-left: 10px;
+    font-size: 32px;
+    color: rgb(255, 0, 51);
+}
+.navigation .right-side{
+    display: flex;
+    align-items: center;
+    /* margin-left: 15px; */
+    position: relative;
+}
+.navigation .right-side .user{
+    margin-right: 18px;
+    color: white;
+}
+.navigation .right-side .user ul{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    z-index: 10;
+    background-color: #61030372;
+    padding: 5px;
+    padding-top: 10px;
+    display: none;
+    /* align-items: right; */
+    transition: all 0.2s ease-out;
+}
+.navigation .right-side .user ul li{
+    padding: 5px;
+    font-size: 12px;  
+}
+.navigation .right-side .user:hover ul{
+    display: inline;
+    top:30px
+}
+.navigation .right-side .search-bar{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.navigation .right-side button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.navigation .right-side .right-side-ctn{
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    /* display: flex; */
+    align-items: center;
+    transition: all 0.2s ease-out;
+}
+.navigation .right-side-ctn:hover{
+    padding: 5px 20px;
+    /* border: none; */
+    
+}
+.navigation .right-side .right-side-ctn .search-bar:active{
+    border: none;
+}
+.main-box{
+    display: flex;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: auto;
+
+}
+.main-box .sub-box{
+    width: 300px;
+    height: 450px;
+    /* border: 1px solid white; */
+    box-shadow: 1px 1px 5px rgb(58, 58, 58);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-box-img{
+    width: 100%;
+    height: 100%;
+}
+.main-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.main-box-text{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.29);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.main-box-text .quality{
+    background-color: rgb(170, 7, 7);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 2px;   
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 5px;
+}
+.main-box-text .bottom-cnt .cnt{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-box-text .categories-ctn{
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.main-box-text .catogories{
+    font-size: 12px;
+    font-weight: 400;
+    color: white ;
+    /* padding-top: 10px; */
+}
+.main-box-text .catogories a{
+    color: rgb(158, 6, 6);
+}
+.main-box-text .rating{
+    /* padding-top: 5px; */
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+.main-box-text .rating img{
+    width: 22px;
+    margin-left: 5px;
+    color: white;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 0.2s ease-out;
+}
+
+.sub-box:hover .overlay {
+    top: 0px;
+}
+

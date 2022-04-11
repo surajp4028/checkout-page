@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('Movie-Data/Pirates-of-the-Caribbean-Salazar\'s-Revenge/screenshot-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+ .blur{
+    /* filter: blur(8px); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.893);
+    left: 0;
+    top: 0;
+}
+.login-box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 290px;
+    /* border: 1px solid rgb(65, 63, 63); */
+    padding:40px 20px;
+    backdrop-filter: blur(8px);
+    background: rgba(84, 84, 84, 0.189);
+    z-index: 5;
+    border-radius: 5px;
+    margin: auto;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 5px black;
+    /* align-items: center; */
+}
+.login-box .username{
+    background-color: rgba(43, 42, 42, 0.279);
+    /* width: 85%; */
+    color: rgb(58, 58, 58);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-box .username input[type="text"],input[type="password"]{
+      background-color: transparent;
+      border: none;
+      color: white !important;
+      /* padding: 10px; */
+}
+button{
+    background-color: rgb(115, 0, 255);
+    border: none;
+    padding: 8px 20px;
+    color: white;
+    font-size: 12px;
+    border-radius: 20px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    margin-bottom: 5px;
+    margin-top: 20px;
+    display: inline;
+    /* margin: auto; */
+}
+.login-box h2{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+.login-box p{
+    font-size: 12px;
+    /* margin-bottom: 20px; */
+    color: rgb(114, 114, 114);
+}
+.login-box .p{
+    margin-bottom: 30px;
+}
